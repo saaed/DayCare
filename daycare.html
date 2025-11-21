@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>First step child care | Loving Care in MarryLand</title>
+  <meta name="description" content="A warm, safe and fun daycare center in Seattle for children 6 months to 5 years. Licensed • Experienced Teachers • Play-Based Learning"/>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1600&h=900&fit=crop'); }
+    .gallery-img { transition: transform 0.3s; }
+    .gallery-img:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold text-orange-500">☀️ Sunshine Kids Daycare</h1>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="hover:text-orange-500 font-medium">Home</a>
+          <a href="#about" class="hover:text-orange-500 font-medium">About</a>
+          <a href="#programs" class="hover:text-orange-500 font-medium">Programs</a>
+          <a href="#gallery" class="hover:text-orange-500 font-medium">Gallery</a>
+          <a href="#contact" class="hover:text-orange-500 font-medium">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero bg-cover bg-center h-screen flex items-center">
+    <div class="max-w-7xl mx-auto px-6 text-center text-white">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">Where Little Hearts Grow Big</h2>
+      <p class="text-xl md:text-2xl mb-8">Loving daycare for children 6 months – 5 years • Seattle, WA</p>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full text-lg">Schedule a Tour</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-yellow-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-800">Welcome to Sunshine Kids</h2>
+        <p class="text-xl text-gray-600 mt-4">A second home filled with laughter, learning, and love</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://images.unsplash.com/photo-1588075592446-4f15e9096e9d?w=600&h=500&fit=crop" alt="Happy kids playing" class="rounded-xl shadow-2xl">
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold mb-4">Our Promise to You</h3>
+          <p class="text-lg leading-relaxed mb-6">
+            Since 2018, Sunshine Kids has been the most trusted daycare in Capitol Hill. 
+            We believe every child deserves a safe, joyful place to explore the world. 
+            Our experienced teachers follow a play-based curriculum that sparks curiosity and builds confidence.
+          </p>
+          <ul class="space-y-3 text-lg">
+            <li>✔️ State-licensed & CPR-certified staff</li>
+            <li>✔️ Low teacher-to-child ratios</li>
+            <li>✔️ Organic meals & snacks included</li>
+            <li>✔️ Secure live webcam access for parents</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">Our Programs</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition">
+          <h3 class="text-2xl font-bold text-orange-500 mb-4">Infants<br>(6 weeks – 12 months)</h3>
+          <p class="text-gray-600">Gentle care, sensory play, and lots of cuddles in our cozy nursery.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition">
+          <h3 class="text-2xl font-bold text-orange-500 mb-4">Toddlers<br>(1 – 3 years)</h3>
+          <p class="text-gray-600">Music, art, outdoor play, and early language development.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition">
+          <h3 class="text-2xl font-bold text-orange-500 mb-4">Preschool<br>(3 – 5 years)</h3>
+          <p class="text-gray-600">Pre-reading, math concepts, science experiments, and kindergarten readiness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery + Video -->
+  <section id="gallery" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">A Day at Sunshine Kids</h2>
+      
+      <!-- Video -->
+      <div class="mb-12 flex justify-center">
+        <div class="w-full max-w-4xl">
+          <iframe class="w-full h-96 rounded-xl shadow-2xl" 
+            src="https://www.youtube.com/watch?v=hIJjq0qbFIM" 
+            title="A day at Sunshine Kids" 
+            allowFullScreen></iframe>
+        </div>
+      </div>
+
+      <!-- Photo Gallery -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://images.unsplash.com/photo-1587653915930-4e0212f0d1a1?w=400" alt="Art time" class="rounded-lg shadow-lg gallery-img object-cover h-64">
+        <img src="https://images.unsplash.com/photo-1577896851228-90c90596cc95?w=400" alt="Outdoor play" class="rounded-lg shadow-lg gallery-img object-cover h-64">
+        <img src="https://images.unsplash.com/photo-1588075592446-4f15e9096e9d?w=400" alt="Circle time" class="rounded-lg shadow-lg gallery-img object-cover h-64">
+        <img src="https://images.unsplash.com/photo-1616077168251-1dd6b8f5e6a3?w=400" alt="Snack time" class="rounded-lg shadow-lg gallery-img object-cover h-64">
+        <img src="https://images.unsplash.com/photo-1603277096273-9702482c8c0f?w=400" alt="Reading corner" class="rounded-lg shadow-lg gallery-img object-cover h-64">
+        <img src="https://images.unsplash.com/photo-1598256989413-2c8d48e8e5b1?w=400" alt="Nap time" class="rounded-lg shadow-lg gallery-img object-cover h-64">
+        <img src="https://images.unsplash.com/photo-1570545887594-77e8b88f5a9e?w=400" alt="Music class" class="rounded-lg shadow-lg gallery-img object-cover h-64">
+        <img src="https://images.unsplash.com/photo-1604902594628-2f8f4e5de0d4?w=400" alt="Graduation" class="rounded-lg shadow-lg gallery-img object-cover h-64">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-orange-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Come Visit Us!</h2>
+      <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div class="text-left bg-white p-10 rounded-xl shadow-xl">
+          <h3 class="text-2xl font-bold mb-6">Contact Info</h3>
+          <p class="text-lg mb-4">📍 1234 Pine Street, Seattle, WA 98122</p>
+          <p class="text-lg mb-4">📞 (206) 555-0123</p>
+          <p class="text-lg mb-4">✉️ hello@sunshinekidsdaycare.com</p>
+          <p class="text-lg font-semibold mt-8">Open Monday – Friday<br>6:30 AM – 6:00 PM</p>
+        </div>
+        <div class="bg-white p-10 rounded-xl shadow-xl">
+          <h3 class="text-2xl font-bold mb-6">Quick Inquiry</h3>
+          <form action="https://formspree.io/f/your-email-here" method="POST">
+            <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-lg" required>
+            <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-lg" required>
+            <input type="tel" name="phone" placeholder="Phone" class="w-full p-3 mb-4 border rounded-lg">
+            <textarea name="message" rows="4" placeholder="Message (e.g., child's age, start date)" class="w-full p-3 mb-6 border rounded-lg" required></textarea>
+            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full w-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-10 text-center">
+    <p class="text-lg">© 2025 Sunshine Kids Daycare • Licensed by Washington State • All rights reserved</p>
+  </footer>
+
+</body>
+</html>
